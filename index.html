@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>추도예배</title>
+
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#2f3e46" />
+
+  <style>
+    :root {
+      --bg: #121212;
+      --paper: #1e1e1e;
+      --ink: #e9ecef;
+      --muted: #adb5bd;
+      --accent: #a9c7c9;
+      --border: #2a2a2a;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Noto Serif KR", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.9;
+      font-size: 100%;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: var(--paper);
+      border-bottom: 1px solid var(--border);
+      z-index: 100;
+    }
+
+    nav {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0.75rem 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .jump a {
+      margin-right: 0.6rem;
+      text-decoration: none;
+      color: var(--accent);
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    .controls {
+      font-size: 0.9em;
+      color: var(--muted);
+    }
+
+    .controls button {
+      font-size: 1.1em;
+      margin-left: 0.3rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: var(--paper);
+      cursor: pointer;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 1.5rem 1rem 4rem;
+    }
+
+    section {
+      margin-top: 3rem;
+      background: var(--paper);
+      padding: 1.5rem;
+      border-radius: 14px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.04);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 1.6em;
+      margin-bottom: 1rem;
+      color: var(--accent);
+    }
+
+    h2 {
+      font-size: 1.2em;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.4rem;
+      margin-bottom: 1rem;
+    }
+
+    .order {
+      font-size: 0.9em;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin: 0.8rem 0;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.8em;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="jump">
+      <a href="#call">예배로의 부름</a>
+      <a href="#hymn">찬송</a>
+      <a href="#word">말씀</a>
+      <a href="#prayer">주기도문</a>
+    </div>
+    <div class="controls">
+      글씨
+      <button onclick="changeFontSize(-1)">−</button>
+      <button onclick="changeFontSize(1)">＋</button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <h1>추도예배</h1>
+
+  <section id="call">
+    <div class="order">예배의 시작</div>
+    <h2>예배로의 부름</h2>
+    <p>하나님께서 오늘도 살아 있는 자와 잠든 자를 아우르시며 우리를 이 자리에 부르셨습니다.</p>
+    <p>이 시간, 슬픔과 감사의 마음을 안고 하나님 앞에 나아가 예배드리겠습니다.</p>
+  </section>
+
+    <section id="hymn">
+    <div class="order">찬양</div>
+    <h2>찬송</h2>
+    <p><strong>찬송가 478장</strong><br />
+<a href="https://www.youtube.com/watch?v=vq4M9XnAU1U" target="_blank" rel="noopener noreferrer">참 아름다워라 주님의 세계는 (유튜브 찬송)</a>
+</p>
+  </section>
+
+  <section id="word">
+    <div class="order">말씀</div>
+    <h2>성경 말씀</h2>
+
+    <p><strong>시편 1편</strong> (개역한글, 1911)</p>
+    <p>복 있는 사람은 악인의 꾀를 좇지 아니하며 죄인의 길에 서지 아니하며 오만한 자의 자리에 앉지 아니하고</p>
+    <p>오직 여호와의 율법을 즐거워하여 그 율법을 주야로 묵상하는도다</p>
+    <p>저는 시냇가에 심은 나무가 시절을 좇아 과실을 맺으며 그 잎사귀가 마르지 아니함 같으니 그 행사가 다 형통하리로다</p>
+    <p>악인은 그렇지 않음이여 오직 바람에 나는 겨와 같도다</p>
+    <p>그러므로 악인이 심판을 견디지 못하며 죄인이 의인의 회중에 들지 못하리로다</p>
+    <p>대저 의인의 길은 여호와께서 인정하시나 악인의 길은 망하리로다</p>
+
+    <p><strong>시편 23편</strong> (개역한글, 1911)</p>
+    <p>여호와는 나의 목자시니 내가 부족함이 없으리로다</p>
+    <p>그가 나를 푸른 초장에 누이시며 쉴만한 물가로 인도하시는도다</p>
+    <p>내 영혼을 소생시키시고 자기 이름을 위하여 의의 길로 인도하시는도다</p>
+    <p>내가 사망의 음침한 골짜기로 다닐지라도 해를 두려워하지 않을 것은 주께서 나와 함께 하심이라 주의 지팡이와 막대기가 나를 안위하시나이다</p>
+    <p>주께서 내 원수의 목전에서 내게 상을 베푸시고 기름으로 내 머리에 바르셨으니 내 잔이 넘치나이다</p>
+    <p>나의 평생에 선하심과 인자하심이 반드시 나를 따르리니 내가 여호와의 집에 영원히 거하리로다</p>
+  </section>
+
+  <section id="poem">
+    <div class="order">응답</div>
+    <h2>추모의 시</h2>
+    <p>할아버지, 웃음부터 건네던 그 얼굴이 아직도 제 하루의 시작에 있습니다.</p>
+    <p>저는 그 웃음을 기억하며 살겠습니다. 오늘을 소중히 여기며, 사람을 귀하게 여기며 살아가겠습니다.</p>
+    <p>언젠가 다시 만나는 날, 부끄럽지 않도록 열심히 살아가겠습니다.</p>
+  </section>
+
+    <section id="closing-hymn">
+    <div class="order">찬양</div>
+    <h2>찬송</h2>
+    <p><strong>찬송가 559장</strong><br />
+<a href="https://www.youtube.com/watch?v=e_VVASEmVtE" target="_blank" rel="noopener noreferrer">사철에 봄바람 불어 잇고 (유튜브 찬송)</a>
+</p>
+  </section>
+
+  <section id="prayer">
+    <div class="order">마침</div>
+    <h2>주기도문</h2>
+    <p>하늘에 계신 우리 아버지여 이름이 거룩히 여김을 받으시오며</p>
+    <p>나라가 임하시오며 뜻이 하늘에서 이룬 것 같이 땅에서도 이루어지이다</p>
+    <p>오늘날 우리에게 일용할 양식을 주옵시고</p>
+    <p>우리가 우리에게 죄 지은 자를 사하여 준 것 같이 우리 죄를 사하여 주옵시고</p>
+    <p>우리를 시험에 들게 하지 마옵시고 다만 악에서 구하옵소서</p>
+    <p>나라와 권세와 영광이 아버지께 영원히 있사옵나이다 아멘</p>
+  </section>
+
+    <footer>
+    이 페이지는 추도예배를 위해 제작되었습니다.<br />
+    어두운 환경에서도 눈의 피로를 줄이도록 다크 모드로 제공됩니다.
+  </footer>
+</main>
+
+<script>
+  let currentSize = 100;
+  function changeFontSize(delta) {
+    currentSize = Math.max(80, currentSize + delta * 10);
+    document.body.style.fontSize = currentSize + '%';
+  }
+
+  if (
+    'serviceWorker' in navigator &&
+    (location.protocol === 'https:' || location.hostname === 'localhost')
+  ) {
+    navigator.serviceWorker.register('sw.js').catch(() => {});
+  }
+</script>
+
+</body>
+</html>
